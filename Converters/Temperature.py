@@ -1,0 +1,38 @@
+print("================================================================")
+print("					 Temperature converter")
+print("================================================================")
+print("1. Fahrenheit")
+print("2. Celsius")
+print("3. Kelvin")
+print("What temperature measurement are you wanting to convert?")
+temp_convert = input()
+
+
+if temp_convert == "1":
+	print("What is the degrees in Fahrenheit?")
+	temp_F = input()
+	F_to_C = (float(temp_F) - 32 * (5/9))
+	F_to_K = (float(temp_F) * (5/9) + 273.15)
+	print("=======================================================================")
+	print(temp_F + " degrees Fahrenheit is equal to " + str(F_to_C) + " degrees Celsius")
+	print(temp_F + " degrees Fahrenheit is equal to " + str(F_to_K) + " degrees Kelvin")
+	print("=======================================================================")
+elif temp_convert == "2":
+	print("What is the degrees in Celsius?")
+	temp_C = input()
+	C_to_F = ((float(temp_C) * (9/5)) + 32)
+	C_to_K = (float(temp_C) + 273.15)
+	print("==========================================================")
+	print(temp_C + " degrees Celsius is equal to " + str(C_to_F) + " degrees Fahrenheit")
+	print(temp_C + " degrees Celsius is equal to " + str(C_to_K) + " degrees Kelvin")
+	print("==========================================================")
+elif temp_convert == "3":
+	print("What is the degrees in Kelvin?")
+	temp_K = input()
+	K_to_F = ((float(temp_K) - 273.15) * (9/5) + 32)
+	K_to_C = (float(temp_K) - 273.15)
+	print("==========================================================")
+	print(temp_K + " degrees Kelvin is equal to " + str(K_to_F) + " degrees Fahrenheit")
+	print(temp_K + " degrees Kelvin is equal to " + str(K_to_C) + " degrees Celsius")
+	print("==========================================================")
+
